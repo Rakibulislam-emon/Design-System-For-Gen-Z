@@ -219,7 +219,7 @@ body {
 }
 
 .landing-content {
-    margin-top: 40px;
+  margin-top: 40px;
   max-width: 800px;
   margin-bottom: 40px;
 }
@@ -338,4 +338,17 @@ body {
   .app-store-buttons {
     gap: 10px;
   }
+}
+
+/* brands section */
+
+.brand-container {
+  max-width: 90%;
+  margin: auto;
+  border: 2px solid black;
+};
+
+.brand-container{
+  display: flex;
+  
 }
