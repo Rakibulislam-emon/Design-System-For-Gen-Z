@@ -1,0 +1,225 @@
+.our-app {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 0px auto;
+    height: 650px;
+    background: #eef2ff;
+    align-items: center; /* Ensures vertical centering */
+    justify-content: center; /* Ensures horizontal centering */
+  }
+  
+  .title-section {
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+  }
+  
+  .title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Ensures content is centered */
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6251ff;
+    text-align: center;
+  }
+  
+  .title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .text-container {
+    display: flex;
+    justify-content: center; /* Centers the text */
+    align-items: center;
+    width: 100%;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .button-group {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .learnMore-btn {
+    text-decoration: none;
+    color: #6251ff;
+    border: 1px solid #6251ff;
+    background-color: #edf2ff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .learnMore-btn:hover {
+    background-color: #6251ff;
+    color: white;
+  }
+  
+  .getStarted-btn {
+    text-decoration: none;
+    background-color: #6251ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .getStarted-btn:hover {
+    background-color: #4030ff;
+  }
+
+.img-container {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  height: 100%;
+}
+
+.img-container img {
+  height: 600px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+.img1 {
+  display: flex;
+  width: 100%;
+}
+
+.img1 img {
+  height: 80%;
+
+  align-self: flex-end;
+}
+
+.img2 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.img2 img {
+  height: 80%;
+  width: 100%;
+  align-self: flex-start;
+}
+.mob-img {
+    display: none; 
+   
+}
+
+@media (max-width: 1024px) {
+.btn-container{
+    width: 100%;
+}
+.button-group{
+    width: 100%;
+}
+.learnMore-btn{
+    border: 1px solid #6251ff;
+}
+
+    .img1,
+    .img2 {
+        display: none; 
+    }
+
+    .mob-img {
+        display: block; 
+        width: 100%;
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .our-app {
+        flex-direction: column;
+        height: auto;
+        margin: 100px auto;
+        gap: 30px;
+    }
+
+    .title-section {
+        width: 90%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .title-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .img-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .img-container img {
+        height: auto;
+        width: 90%;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-container img {
+        width: 100%;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-app {
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .img-container img {
+        max-height: 650px;
+    }
+}
