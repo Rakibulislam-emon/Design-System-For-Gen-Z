@@ -1,0 +1,159 @@
+
+/* Stats Section */
+.container {
+    max-width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Title Section */
+  .text-section {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .text-section h4 {
+    display: inline-block;
+    background: #eef2ff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #4c4cff;
+    font-size: 14px;
+  }
+  
+  .text-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .text-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Flexbox for Content */
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  /* Info Section */
+  .info-section {
+    flex: 1;
+  }
+  
+  /* Default Info Item */
+  .info-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .info-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 4px;
+    height: 100%;
+    background: #e0e7ff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Active Info Item */
+  .info-item.active::before {
+    width: 6px; /* Larger left border */
+    background: #4c4cff; /* Border color */
+  }
+  
+  .info-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  .info-item p {
+    padding: -20px 0;
+  }
+  
+  /* Image Section */
+  .image-section {
+    /* flex: 1; */
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  /* Hide mobile image by default */
+  .image-section .pc {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .image-section .mobile {
+    display: none;
+  }
+  
+  
+  /* Tablet Responsive Design */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .info-section {
+      width: 100%;
+    }
+  
+    .info-item {
+      text-align: left;
+    }
+  
+    .image-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .image-section .pc {
+      max-width: 80%;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-item {
+      text-align: left;
+    }
+  
+    /* Hide PC image and show mobile image */
+    .image-section .pc {
+      display: none;
+    }
+  
+    .image-section .mobile {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  
+  
+  
+  

@@ -5,9 +5,9 @@
     margin: 0px auto;
     height: 650px;
     background: #eef2ff;
-    align-items: center; /* Ensures vertical centering */
-    justify-content: center; /* Ensures horizontal centering */
-  }
+    align-items: center;
+    justify-content: center; 
+    }
   
   .title-section {
     gap: 20px;
@@ -16,7 +16,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centers content horizontally */
+    align-items: center; 
+  
   }
   
   .title-content {
@@ -28,6 +29,7 @@
     gap: 20px;
     width: 100%;
     padding: 20px;
+    
   }
   
   .title {
@@ -95,10 +97,13 @@
   }
 
 .img-container {
+  /* padding: 100px; */
+  padding-left: 10%;
   width: 100%;
   display: flex;
   gap: 50px;
   height: 100%;
+
 }
 
 .img-container img {
@@ -133,12 +138,14 @@
    
 }
 
-@media (max-width: 1024px) {
+@media  (max-width: 1024px) {
 .btn-container{
     width: 100%;
 }
-.button-group{
-    width: 100%;
+.button-group {
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
 }
 .learnMore-btn{
     border: 1px solid #6251ff;
@@ -151,7 +158,7 @@
 
     .mob-img {
         display: block; 
-        width: 100%;
+        width: 70%;
         max-width: 100%; 
         height: auto; 
     }
@@ -159,7 +166,7 @@
     .our-app {
         flex-direction: column;
         height: auto;
-        margin: 100px auto;
+        margin: 0px auto;
         gap: 30px;
     }
 
@@ -190,26 +197,11 @@
     .img-container img {
         height: auto;
         width: 90%;
-        max-height: 400px;
+        max-height: 700px;
     }
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.8rem;
-    }
-
-    .button-group {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .img-container img {
-        width: 100%;
-        max-height: 300px;
-    }
-}
-
+/* mobile */
 @media (max-width: 480px) {
     .our-app {
         gap: 20px;
@@ -218,8 +210,13 @@
     .title {
         font-size: 1.5rem;
     }
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
 
+  }
     .img-container img {
-        max-height: 650px;
+      width: 100%;
+      max-height: 650px;
     }
 }
