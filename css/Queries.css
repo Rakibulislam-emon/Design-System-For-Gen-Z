@@ -1,6 +1,9 @@
 .faq {
   background-color: #f8fafc;
   /* padding: 0px 0; */
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 /* FAQ Container */
@@ -20,11 +23,17 @@
   flex-direction: column;
   gap: 20px 0;
 }
-
+.faq-title h1{
+   font-size: 36px;
+   font-weight: 800;
+}
 .faq-title {
   margin-bottom: 60px;
 }
-
+.faq-title p{
+  font-size: 18px;
+  font-weight: 400;
+}
 .faq-title span {
   color: #4f46e5;
   background: #eef2ff;

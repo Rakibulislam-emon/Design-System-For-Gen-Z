@@ -1,7 +1,8 @@
 
 /* Footer container */
 .footer-container {
-    width: 90%;
+    width: 100%;
+    max-width: 1440px;
     /* max-width: 1200px; */
     margin: 0 auto;
     padding:100px 20px;
@@ -67,7 +68,7 @@
 }
 
 .footer-logo img {
-    height: 30px;
+    height: 45px;
 }
 
 .footer-logo span {
@@ -87,18 +88,11 @@
     font-size: 40px;
     width: 40px;
     height: 40px;
-    background-color: #f8f9fa;
-    border: 1px solid #e7e7e7;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.scroll-top:hover {
-    background-color: #eaeaea;
 }
 
 /* Dotted border */

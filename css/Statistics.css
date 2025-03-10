@@ -1,151 +1,156 @@
-
 /* statistics section */
 .statistics-bg {
-    background: #f8fafc;
-  }
-  
+  background: #f8fafc;
+  max-width: 1440px; /* Adjust according to your Figma width */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stats-container {
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home-icon {
+  width: 24px;
+  height: 24px;
+  color: #6c5ce7;
+}
+
+.stats-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.stats-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.stats-grid {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  padding: 20px;
+  min-width: 200px;
+  flex: 1;
+  border-radius: 8px;
+  /* background-color: #fff; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+}
+
+.stat-value {
+  font-size: 42px;
+  font-weight: 700;
+  color: #6c5ce7;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Default for PC (border left & right, no top & bottom) */
+.stat-border {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
   .stats-container {
-    max-width: 90%;
-    margin: 60px auto;
-    padding: 40px 20px;
-    text-align: center;
+    padding: 40px 15px; /* Adjust padding for better alignment */
   }
-  
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .home-icon {
-    width: 24px;
-    height: 24px;
-    color: #6c5ce7;
-  }
-  
+}
+
+@media (max-width: 992px) {
   .stats-heading {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    font-size: 32px;
   }
-  
-  .stats-description {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto 40px;
-  }
-  
+
   .stats-grid {
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 30px;
   }
-  
-  .stat-item {
-    padding: 20px;
-    min-width: 200px;
-    flex: 1;
-    border-radius: 8px;
-    /* background-color: #fff; */
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
-  }
-  
+
   .stat-value {
-    font-size: 42px;
-    font-weight: 700;
-    color: #6c5ce7;
-    margin-bottom: 10px;
+    font-size: 38px;
   }
-  
-  .stat-label {
-    font-size: 14px;
-    color: #666;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    margin: 40px auto;
+    padding: 30px 20px;
   }
-  
-  /* Default for PC (border left & right, no top & bottom) */
+
+  .stats-heading {
+    font-size: 28px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats-description {
+    font-size: 15px;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .stats-grid {
+    gap: 20px;
+  }
+
+  .stat-item {
+    padding: 15px;
+    min-width: 150px;
+  }
+
+  .stat-value {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-heading {
+    font-size: 24px;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .stat-item {
+    width: 100%;
+  }
+
   .stat-border {
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    border-top: none;
-    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
-    .stats-heading {
-      font-size: 32px;
-    }
-  
-    .stats-grid {
-      gap: 30px;
-    }
-  
-    .stat-value {
-      font-size: 38px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .stats-container {
-      margin: 40px auto;
-      padding: 30px 20px;
-    }
-  
-    .stats-heading {
-      font-size: 28px;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .stats-description {
-      font-size: 15px;
-      max-width: 90%;
-      margin-bottom: 30px;
-    }
-  
-    .stats-grid {
-      gap: 20px;
-    }
-  
-    .stat-item {
-      padding: 15px;
-      min-width: 150px;
-    }
-  
-    .stat-value {
-      font-size: 32px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .stats-heading {
-      font-size: 24px;
-    }
-  
-    .stats-grid {
-      flex-direction: column;
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  
-    .stat-item {
-      width: 100%;
-    }
-    .stat-border {
-      border-left: none;
-      border-right: none;
-      border-top: 1px solid #e5e5e5;
-      border-bottom: 1px solid #e5e5e5;
-    }
-  }
-  
-  
-  
+}

@@ -1,140 +1,145 @@
-
 /* features */
 
 .features-container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 60px 0;
+  max-width: 1440px; /* Adjust according to your Figma width */
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px; /* Added padding for better alignment */
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 0; /* Removed padding from sides */
+}
+
+.features-header h6 {
+  font-size: 14px;
+  color: #6c5ce7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.features-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.features-header p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Set gap for grid spacing */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  color: #6c5ce7;
+  stroke-width: 1.5;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .features-container {
+      padding: 40px 20px; /* Adjust padding for medium screens */
   }
-  
-  .features-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 30px 20px;
-  }
-  
-  .features-header h6 {
-    font-size: 14px;
-    color: #6c5ce7;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
-  }
-  
-  .features-header h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 16px;
-  }
-  
-  .features-header p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    max-width: 70%;
-    margin: 0 auto;
-  }
-  
+}
+
+@media (max-width: 992px) {
   .features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-  }
-  
-  .feature-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 15px;
-  }
-  
-  .feature-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    color: #6c5ce7;
-    stroke-width: 1.5;
-  }
-  
-  .feature-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #333;
-  }
-  
-  .feature-text {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
-    .features-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
-    }
-  
-    .features-header p {
-      max-width: 80%;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .features-container {
-      padding: 40px 0;
-    }
-  
-    .features-header {
+
+  .features-header p {
+      max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-container {
+      padding: 40px 15px; /* Adjust padding */
+  }
+
+  .features-header {
       padding: 20px 15px;
-    }
-  
-    .features-header h2 {
+  }
+
+  .features-header h2 {
       font-size: 28px;
-    }
-  
-    .features-header p {
+  }
+
+  .features-header p {
       max-width: 95%;
       font-size: 15px;
-    }
-  
-    .features-grid {
-      padding: 30px 15px;
-    }
   }
-  
-  @media (max-width: 576px) {
-    .features-grid {
+
+  .features-grid {
+      padding: 30px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .features-grid {
       grid-template-columns: 1fr;
       gap: 20px;
-    }
-  
-    .features-header h2 {
+  }
+
+  .features-header h2 {
       font-size: 24px;
-    }
-  
-    .feature-item {
+  }
+
+  .feature-item {
       padding: 15px 10px;
-    }
-  
-    .feature-icon {
+  }
+
+  .feature-icon {
       width: 50px;
       height: 50px;
       margin-bottom: 15px;
-    }
-  
-    .feature-title {
+  }
+
+  .feature-title {
       font-size: 17px;
       margin-bottom: 12px;
-    }
-  
-    .feature-text {
-      max-width: 100%;
-    }
   }
-  
+
+  .feature-text {
+      max-width: 100%;
+  }
+}
