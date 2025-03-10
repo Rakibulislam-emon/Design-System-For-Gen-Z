@@ -1,6 +1,6 @@
 /* Stats Section */
 .container {
-  max-width: 1440px; /* Adjust according to your Figma width */
+  max-width: 1440px; 
   width: 100%;
   margin: 60px auto;
   display: flex;
@@ -35,7 +35,7 @@
   line-height: 1.6;
 }
 
-/* Flexbox for Content */
+
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
   flex: 1;
 }
 
-/* Default Info Item */
+
 .info-item {
   position: relative;
   padding-left: 20px;
@@ -68,10 +68,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Active Info Item */
+
 .info-item.active::before {
-  width: 6px; /* Larger left border */
-  background: #4c4cff; /* Border color */
+  width: 6px;
+  background: #4c4cff; 
 }
 
 .info-item h3 {
@@ -91,7 +91,7 @@
   text-align: center;
 }
 
-/* Hide mobile image by default */
+
 .image-section .pc {
   max-width: 100%;
   height: auto;
@@ -103,7 +103,7 @@
   display: none;
 }
 
-/* Tablet Responsive Design */
+/* Tablet Responsive  */
 @media (max-width: 1024px) {
   .content-wrapper {
       flex-direction: column;
@@ -129,7 +129,7 @@
   }
 }
 
-/* Responsive Design */
+/* Responsive  */
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -145,7 +145,6 @@
       text-align: left;
   }
 
-  /* Hide PC image and show mobile image */
   .image-section .pc {
       display: none;
   }

@@ -1,6 +1,5 @@
 .faq {
   background-color: #f8fafc;
-  /* padding: 0px 0; */
   width: 100%;
   max-width: 1440px;
   margin: auto;
@@ -73,14 +72,21 @@
 }
 
 .faq-answer.open {
-  max-height: 200px; /* Adjust based on content */
+  max-height: 200px; 
   padding-bottom: 20px;
 }
 
-/* Media Query for Devices Below PC */
+
 @media (max-width: 1024px) {
   .faq-container {
-    max-width: 100%; /* Full width for devices smaller than or equal to 1024px */
-    padding: 40px 10px; /* Adjust padding to fit better on small screens */
+    max-width: 100%; 
+    padding: 40px 10px;
+  }
+  .faq-title{
+   text-align: center;
+   font-size: 36px;
+  }
+  .faq-item{
+    padding: 0 10px;
   }
 }

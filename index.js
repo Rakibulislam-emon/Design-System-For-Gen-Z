@@ -10,7 +10,7 @@ async function loadComponent(componentId, filePath) {
   }
 }
 
-// Load all components before running event listeners
+// Load all components before running any event listeners
 async function loadAllComponents() {
   await Promise.all([
     loadComponent("header-placeholder", "components/Navbar.html"),
@@ -26,9 +26,10 @@ async function loadAllComponents() {
     loadComponent("footer-placeholder", "components/Footer.html"),
   ]);
 
-  // Now attach event listeners after components are fully loaded
+  // run those functions which need to be initialize before events listens
   setupMenuToggle();
-  setupFAQ(); // Add FAQ functionality
+  setupFAQ();
+  setupTestimonials(); 
 }
 
 // Mobile menu toggle
@@ -57,5 +58,71 @@ function setupFAQ() {
   });
 }
 
+// Function to handle testimonials for mobile view
+function setupTestimonials() {
+  // Only run this on smaller screens
+  if (window.innerWidth <= 768) {
+    const testimonials = document.querySelectorAll('.testimonial');
+    const testimonialsContainer = document.querySelector('.testimonials');
+    
+    // Check if there are more than 3 testimonials
+    if (testimonials.length > 3) {
+      const loadMoreButton = document.createElement('button');
+      loadMoreButton.textContent = 'Load More ＋';
+      loadMoreButton.className = 'load-more-btn';
+      testimonialsContainer.parentNode.insertBefore(loadMoreButton, testimonialsContainer.nextSibling);
+      
+      // Initially hide testimonials beyond the first 3
+      testimonials.forEach((testimonial, index) => {
+        if (index >= 3) {
+          testimonial.style.display = 'none';
+        }
+      });
+      
+      // Add click event to show hidden testimonials
+      loadMoreButton.addEventListener('click', function() {
+        testimonials.forEach(testimonial => {
+          testimonial.style.display = 'block';
+        });
+        // Hide the button after all testimonials are shown
+        this.style.display = 'none';
+      });
+    }
+  }
+}
+
 // Run the function to load components
 loadAllComponents();
+
+// Also handle window resize to apply the testimonial logic when screen size changes
+window.addEventListener('resize', function() {
+  // First remove any existing load more button
+  const existingButton = document.querySelector('.load-more-btn');
+  if (existingButton) {
+    existingButton.remove();
+  }
+  
+  // Reset all testimonials to be visible
+  const testimonials = document.querySelectorAll('.testimonial');
+  testimonials.forEach(testimonial => {
+    testimonial.style.display = 'block';
+  });
+  
+  // Re-run the setup
+  setupTestimonials();
+});
+
+
+// navigate to top
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopBtn = document.querySelector(".scroll-top");
+
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+});

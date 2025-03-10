@@ -6,7 +6,7 @@
   padding: 0 70px; 
 }
 
-/* Title Container */
+
 .title-container {
   display: flex;
   flex-direction: column;
@@ -14,9 +14,9 @@
   text-align: left;
 }
 
-/* Title Section */
+
 .title-container h6 {
-  font-size: 14px; /* Adjusted for readability */
+  font-size: 14px; 
   width: 140px;
   padding: 5px 15px;
   border-radius: 1234px;
@@ -30,7 +30,6 @@
   color: #666;
 }
 
-/* Office Grid */
 .office-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -38,7 +37,7 @@
   padding: 20px 0;
 }
 
-/* List Styling */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -51,7 +50,7 @@ li {
   background-color: #fff;
 }
 
-/* Country Title */
+
 .country {
   padding: 15px 0;
   font-size: 20px;
@@ -59,7 +58,7 @@ li {
   color: #333;
 }
 
-/* Tablet Responsive Design */
+/* Tablet Responsive  */
 @media (max-width: 1024px) {
   .office-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -67,11 +66,11 @@ li {
   }
 
   .title-container h2 {
-    font-size: 14px; /* Adjusted for better visibility on tablet */
+    font-size: 14px; 
   }
 }
 
-/* Mobile Responsive Design */
+/* Mobile Responsive  */
 @media (max-width: 768px) {
 
   .location-container {

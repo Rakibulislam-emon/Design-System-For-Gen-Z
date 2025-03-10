@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Ensures content is centered */
+  align-items: center; 
   height: 100%;
   gap: 20px;
   width: 100%;
@@ -49,7 +49,7 @@
 
 .text-container {
   display: flex;
-  justify-content: center; /* Centers the text */
+  justify-content: center; 
   align-items: center;
   width: 100%;
 }
@@ -110,7 +110,7 @@
 .img-container img {
   height: 600px;
   width: 100%;
-  /* object-fit: cover; */
+
 }
 .img1 {
   display: flex;
@@ -217,28 +217,17 @@
     align-items: center;
     width: 100%;
   }
-  
-  /* .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    border: 2px solid black;
-  } */
-  
+
   .learnMore-btn {
-   width: 100%;
+    width: 100%;
   }
-  
- 
-  
+
   .getStarted-btn {
     width: 100%;
   }
-  
 
-
-  .img-container img {
+  .mob-img {
     width: 100%;
-    max-height: 650px;
+    text-align: center;
   }
 }

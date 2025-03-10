@@ -1,24 +1,27 @@
-/* features */
-
 .features-container {
-  max-width: 1440px; /* Adjust according to your Figma width */
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 20px; /* Added padding for better alignment */
+  padding: 60px 20px;
 }
 
 .features-header {
   text-align: center;
   margin-bottom: 40px;
-  padding: 30px 0; /* Removed padding from sides */
+  padding: 30px 0;
 }
 
 .features-header h6 {
   font-size: 14px;
   color: #6c5ce7;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+
   margin-bottom: 8px;
+}
+
+.features-header span {
+  border-radius: 1234px;
+  background: #eef2ff;
+  padding: 4px 10px;
 }
 
 .features-header h2 {
@@ -39,7 +42,7 @@
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px; /* Set gap for grid spacing */
+  gap: 30px;
 }
 
 .feature-item {
@@ -76,70 +79,70 @@
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .features-container {
-      padding: 40px 20px; /* Adjust padding for medium screens */
+    padding: 40px 20px; 
   }
 }
 
 @media (max-width: 992px) {
   .features-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 
   .features-header p {
-      max-width: 80%;
+    max-width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .features-container {
-      padding: 40px 15px; /* Adjust padding */
+    padding: 40px 15px; 
   }
 
   .features-header {
-      padding: 20px 15px;
+    padding: 20px 15px;
   }
 
   .features-header h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .features-header p {
-      max-width: 95%;
-      font-size: 15px;
+    max-width: 95%;
+    font-size: 15px;
   }
 
   .features-grid {
-      padding: 30px 15px;
+    padding: 30px 15px;
   }
 }
 
 @media (max-width: 576px) {
   .features-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .features-header h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .feature-item {
-      padding: 15px 10px;
+    padding: 15px 10px;
   }
 
   .feature-icon {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
   }
 
   .feature-title {
-      font-size: 17px;
-      margin-bottom: 12px;
+    font-size: 17px;
+    margin-bottom: 12px;
   }
 
   .feature-text {
-      max-width: 100%;
+    max-width: 100%;
   }
 }

@@ -1,15 +1,13 @@
-/* Brands Section */
-
 .brand-container {
-  max-width: 1440px; /* Adjust according to your Figma width */
+  max-width: 1440px;
   width: 100%;
   margin: auto;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
-  gap: 24px; /* Adjusted spacing */
-  padding: 40px; /* More padding for better spacing */
+  gap: 24px;
+  padding: 40px;
 }
 
 /* Brand Items */
@@ -29,13 +27,12 @@
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover Effect */
 .brand-container img:hover {
   filter: grayscale(100%);
   transform: scale(1.05);
 }
 
-/* 📏 Tablet Screens (768px - 1024px) */
+/* Tablet Screens (768px - 1024px) */
 @media (max-width: 1024px) {
   .brand-container {
     grid-template-columns: repeat(4, 1fr);
@@ -44,7 +41,7 @@
   }
 }
 
-/* 📱 Mobile Screens (480px - 768px) */
+/* Mobile Screens (480px - 768px) */
 @media (max-width: 768px) {
   .brand-container {
     grid-template-columns: repeat(3, 1fr);
@@ -53,7 +50,7 @@
   }
 }
 
-/* 📱 Small Mobile Screens (<480px) */
+/* Small Mobile Screens (<480px) */
 @media (max-width: 480px) {
   .brand-container {
     grid-template-columns: repeat(3, 1fr);
